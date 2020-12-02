@@ -1,7 +1,7 @@
 NAME := pkgs-checker
 PACKAGE_NAME ?= $(NAME)
 REVISION := $(shell git rev-parse --short HEAD || echo unknown)
-BUILD_PLATFORMS ?= -osarch="linux/amd64" -osarch="linux/386" -osarch="linux/arm"
+BUILD_PLATFORMS ?= -osarch="linux/amd64" -osarch="linux/386" -osarch="linux/arm64" -osarch="linux/arm"
 
 .PHONY: all
 
